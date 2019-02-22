@@ -36,9 +36,8 @@ for image in imageList:
     for (x, y, w, h) in faces:
         if dontExportFaces:
             # cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
-            if dontExportFaces:
-                imgCrop = image[y:y+h,x:x+w]
-                cv2.imshow( fileNames[i].split('.')[0] + '-face-' + str(f), imgCrop)
+            imgCrop = image[y:y+h,x:x+w]
+            cv2.imshow( fileNames[i].split('.')[0] + '-face-' + str(f), imgCrop)
         else:
             imgCrop = image[y:y+h,x:x+w]
             cv2.imwrite('images/output/' + fileNames[i].split('.')[0] + '-face-' + str(f) + '.jpg', imgCrop)
