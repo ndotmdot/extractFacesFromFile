@@ -1,6 +1,6 @@
 # Usage
 
-$ python extractFacesFromFile.py
+`$ python extractFacesFromFile.py`
 
 ## Options
 
