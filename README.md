@@ -9,16 +9,17 @@ $ python extractFacesFromFile.py
 Sortes processed files by moving them into subfolder
 
 `bool dontExportFaces`
+
 Does not save found faces as new images but creates a screen output
 
 # Setup
 
-##Dependencies
+## Dependencies
 
 Python 2.7.10
 OpenCV 4.0.0
 
-##Folder Structure
+## Folder Structure
 
 To make the program run, create the following folder structur
 
