@@ -15,8 +15,8 @@ Create folder structure and drop input images
 │   └── input
 │       ├── [files_to_process.jpg]
 │       └── processed
-│           ├── found-no-faces
-│           └── found-faces
+│           ├── found-no-face
+│           └── found-face
 └── output
     └── [extracted_faces.jpg]
 ```

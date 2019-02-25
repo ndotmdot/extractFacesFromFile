@@ -34,8 +34,18 @@ for image in imageList:
 
     f = 1
     for (x, y, w, h) in faces:
+        desiredRatioWidth = 1080.0
+        desiredRatioHeight = 720.0
+
+        scaledWidth = int((h / desiredRatioHeight ) * desiredRatioWidth)
+        scaledOffsetX = -(w - scaledWidth) / 2
+
+        x -= scaledOffsetX
+        w = scaledWidth
+
         if dontExportFaces:
-            # cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
+            # cv2.rectangle(image, (x, y), (x+w, y+h), (255, 0, 0), 2)
+
             imgCrop = image[y:y+h,x:x+w]
             cv2.imshow( fileNames[i].split('.')[0] + '-face-' + str(f), imgCrop)
         else:
