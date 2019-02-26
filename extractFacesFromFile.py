@@ -1,9 +1,5 @@
 import cv2
-# import sys
 import glob
-# import datetime as dt
-# from time import sleep
-# import numpy as np
 import os
 import shutil
 
